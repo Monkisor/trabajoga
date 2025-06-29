@@ -1,0 +1,91 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        :root {
+            --primary: #667eea;
+            --success: #48bb78;
+            --danger: #f56565;
+            --light: #f7fafc;
+            --dark: #2d3748;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            --shadow-soft: 0 10px 30px rgba(102, 126, 234, 0.1);
+        }
+
+        body {
+            background: var(--gradient-primary);
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            padding: 2rem 0;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .card {
+            background: var(--gradient-card);
+            border: none;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+            padding: 2rem;
+        }
+
+        .card-header {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        label {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control, select {
+            border-radius: 12px;
+            padding: 0.75rem 1rem;
+            border: 2px solid rgba(102, 126, 234, 0.15);
+            background: rgba(255, 255, 255, 0.9);
+            transition: 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary {
+            background-color: var(--dark);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            border: none;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-success:hover {
+            background-color: #38a169;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary:hover {
+            background-color: #1a202c;
+            transform: translateY(-2px);
+        }
